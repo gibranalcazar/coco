@@ -13,7 +13,7 @@
     let imgWidth = img.width
 
     function Run() {
-        container.style.width = width + 'px';
+        //container.style.width = width + 'px';
         //focus = (focus + 1) % 2;
         console.log('focus: ');
         console.log(focus);
@@ -22,10 +22,10 @@
         direction = checkPageBounds(direction, imgWidth);
         img.src = pacArray[direction][focus];
         if (direction === 1) {
-            pos -= 40;
+            pos -= 20;
             img.style.left = pos + "px";
         } else {
-            pos += 40;
+            pos += 20;
             img.style.left = pos + 'px';
         }
         focus++;
@@ -33,6 +33,8 @@
             focus = 0;
         }
         // Use setTimeout to call Run every 200 millesecs
+        container.style.width = (window.innerWidth-20) + 'px';
+        width = window.innerWidth-20;
     }
 
     function checkPageBounds(direction, imgWidth) {
