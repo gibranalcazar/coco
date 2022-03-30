@@ -5,4 +5,4 @@ Next link will get you to simulation in browser:
 
 https://gn-am.github.io/coco/
 
-This is just the beginning to simulate something with more complexity.
+This is the beginning to simulate something with more complexity.
